@@ -36,3 +36,19 @@ window.addEventListener("scroll", () => {
         header.style.boxShadow = "0 2px 10px rgba(0,0,0,0.05)";
     }
 });
+// ================= SCROLL ANIMATION =================
+const animatedElements = document.querySelectorAll(".fade-up, .fade-in");
+
+const revealOnScroll = () => {
+    animatedElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("show");
+        }
+    });
+};
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);

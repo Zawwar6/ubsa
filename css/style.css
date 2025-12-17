@@ -263,7 +263,7 @@ ul {
 
 .gallery-grid img {
     border-radius: 14px;
-    height: 200px;
+    height: 500px;
     object-fit: cover;
     transition: 0.3s ease;
 }
@@ -326,6 +326,38 @@ ul {
     margin-top: 40px;
     font-size: 14px;
     color: #aaa;
+}
+
+/* ================= ANIMATIONS ================= */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+/* Hover polish */
+.event-card,
+.gallery-grid img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
 /* ================= RESPONSIVE ================= */
