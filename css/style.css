@@ -367,25 +367,7 @@ ul {
 }
 
 /* ================= ANIMATIONS ================= */
-.fade-up {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-}
 
-.fade-up.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-.fade-in.show {
-    opacity: 1;
-}
 
 /* Hover polish */
 .event-card,
